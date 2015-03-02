@@ -1,0 +1,58 @@
+body {
+	background: url(media/paperbkgd2.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+ul {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	text-align: center;
+	margin: 1% 2% 1% 2%;
+}
+
+li img {
+	opacity: 0.6;
+	/*transition: all 200ms;*/
+}
+
+	li img:hover {
+		opacity: 0.9;
+		-webkit-filter: drop-shadow(0 0 10px rgba(255,255,255,1));
+
+	}
+
+li a {
+	text-decoration: none;
+	color: rgba(255,255,255,0.9);
+}
+
+#articleWrap {
+	width: 40%;
+	margin: 1% auto 5% auto;
+	background-color: rgba(0,0,0,0.2);
+	padding: 3%;
+}
+
+article {
+	font-family: "sofia-pro-soft",sans-serif;
+	font-size: 1.2em;
+	color: rgba(255,245,240,0.9);
+	text-shadow: 0 0 2px rgba(0,0,0,1);
+	text-indent: 1.1em;
+	/*padding-top: -1%;*/
+	text-align: center;
+	width: 100%;
+	line-height: 1.5em;
+}
+
+/*
+h2 span {
+	text-indent: 0;
+}*/
