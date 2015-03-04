@@ -9,6 +9,7 @@
 		<script src="//use.typekit.net/ulb0zpb.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="script/jquery.cookie.js"></script>
 		<title>Buy Our Products</title>
 	</head>
 
@@ -23,7 +24,15 @@
 			</ul>
 		</div>
 
-		<div id="owed">Amount Owed:</div>
+		<div id="itemlist">
+			<h2>ITEMS:</h2>
+			<hr>
+			<div id="enter">
+
+			</div>
+		</div>
+
+		<div id="owed">Click the<br>Credit Card...</div>
 
 		<label for="cardcheck"><img src="media/card.png" id="cardimg"></label>
 		<input type="checkbox" id="cardcheck">
@@ -42,5 +51,19 @@
 
 
 	</body>
+	<script>
+
+	$(document).ready(function () {
+		
+		console.log($.cookie("prodsbuy"));
+
+		var cart = $.cookie("prodsbuy").replace(/,/g,"<br>")
+
+		$("#enter").append(cart);
+
+	});
+
+
+	</script>
 
 </html>

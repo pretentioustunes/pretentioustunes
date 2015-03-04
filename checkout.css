@@ -1,8 +1,28 @@
+#itemlist {
+	width: 40%;
+	margin: 1% auto 5% auto;
+	background-color: rgba(0,0,0,0.2);
+	padding: 3px;
+}
+
+#itemlist h2 {
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #eeeeee;
+	padding: 2px;
+	margin-top: 5px;
+}
+
+#itemlist hr {
+	border: 1px solid rgba(256,256,256,0.3);
+}
+
 #owed {
 	color: rgba(255,255,255,0.9);
 	position: absolute;
 	top: 40%;
 	left: 50%;
+	text-align: center;
 	-webkit-transform: translate(-50%);
 }
 
